@@ -68,6 +68,7 @@
             color: var(--blue);
             font-size: 1.8rem;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         ul {
@@ -78,12 +79,35 @@
         footer {
             background-color: #e5e7eb;
             text-align: center;
-            padding: 25px;
+            padding: 25px 20px;
             font-size: 0.9rem;
-            margin-top: 40px;
         }
 
-        /* 📱 Mobile Responsiveness */
+        footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: var(--blue);
+        }
+
+        .testimonial {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .testimonial p {
+            font-style: italic;
+        }
+
+        .testimonial span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
         @media (max-width: 768px) {
             header {
                 padding: 40px 15px;
@@ -109,7 +133,6 @@
 
             section h2 {
                 font-size: 1.5rem;
-                text-align: center;
             }
 
             ul {
@@ -161,8 +184,27 @@
         <p><strong>CashApp:</strong> $ChristianTchito</p>
     </section>
 
+    <section>
+        <h2>⭐ Customer Testimonials</h2>
+        <div class="testimonial">
+            <p>"I won 3 items and they got them to me the next day! Super smooth and stress-free."</p>
+            <span>– Ashley R., Columbus</span>
+        </div>
+        <div class="testimonial">
+            <p>"Very professional service. They even helped bring the item into my garage."</p>
+            <span>– Kevin M., Cincinnati</span>
+        </div>
+        <div class="testimonial">
+            <p>"Highly recommend. I didn’t have to lift a finger after winning on BidFTA."</p>
+            <span>– Jenna S., Westerville</span>
+        </div>
+    </section>
+
     <footer>
         &copy; 2025 BidFTA Delivery. All rights reserved.
+        <br />
+        <a href="#">Terms</a> |
+        <a href="#">Privacy</a>
     </footer>
 
 </body>
