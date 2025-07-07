@@ -42,22 +42,6 @@
             margin-bottom: 20px;
         }
 
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 14px 28px;
-            background-color: var(--green);
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #15803d;
-        }
-
         section {
             padding: 60px 20px;
             max-width: 900px;
@@ -75,6 +59,17 @@
             line-height: 1.8;
         }
 
+        p {
+            font-size: 1rem;
+        }
+
+        iframe {
+            width: 100%;
+            height: 1200px;
+            border: none;
+            margin-top: 20px;
+        }
+
         footer {
             background-color: #e5e7eb;
             text-align: center;
@@ -83,18 +78,41 @@
             margin-top: 40px;
         }
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
+        /* 📱 Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 15px;
             }
 
-            .button {
-                padding: 12px 20px;
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header p {
                 font-size: 1rem;
+            }
+
+            section {
+                padding: 30px 15px;
             }
 
             section h2 {
                 font-size: 1.5rem;
+                text-align: center;
+            }
+
+            ul {
+                padding-left: 15px;
+                font-size: 0.95rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+                text-align: center;
+            }
+
+            iframe {
+                height: 1400px;
             }
         }
     </style>
@@ -105,9 +123,14 @@
     <header>
         <h1>🚚 BidFTA Pickup & Delivery</h1>
         <p>Columbus & Cincinnati – Fast, Safe & Affordable Auction Item Delivery</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSWcUZVD-pjr-aOrS-wD-Lfh2tItp-DoaehbIx3m8-zq0sOw/viewform?usp=sharing&ouid=116781305910590566086"
-            target="_blank" class="button">📦 Request Delivery Now</a>
     </header>
+
+    <section>
+        <h2>📦 Request Delivery</h2>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdSWcUZVD-pjr-aOrS-wD-Lfh2tItp-DoaehbIx3m8-zq0sOw/viewform?embedded=true"
+            frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
 
     <section>
         <h2>🛠 How It Works</h2>
